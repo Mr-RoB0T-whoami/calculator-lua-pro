@@ -30,13 +30,16 @@ function tangent(a)
 end
 function log(a,b)
     return math.log(a,b)
+end
+function porsentage(a,b)
+    return a*b/100
     
 end
 
 print("elige dos numeros")
 local n1 = tonumber(io.read())
 local n2 = tonumber(io.read())
-print("elige la operasion: +,*,-,/,pot,rais,seno,coseno,tangent")
+print("elige la operasion: +,*,-,/,pot,rais,seno,coseno,tangent,log,porsentage")
 local operasion = io.read()
 if operasion == "+" then
     print(suma(n1,n2))
@@ -61,6 +64,8 @@ elseif operasion== "tangent" then
     print(tangent(n1))
 elseif operasion =="log" then
     print(log(n1,n2))
+elseif operasion =="porsentage" then
+    print(porsentage(n1,n2))
 else
     print("error")
 end
