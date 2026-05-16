@@ -28,6 +28,10 @@ end
 function tangent(a)
     return math.tan(a)
 end
+function log(a,b)
+    return math.log(a,b)
+    
+end
 
 print("elige dos numeros")
 local n1 = tonumber(io.read())
@@ -55,5 +59,9 @@ elseif operasion== "coseno" then
     print(coseno(n1))
 elseif operasion== "tangent" then
     print(tangent(n1))
+elseif operasion =="log" then
+    print(log(n1,n2))
+else
+    print("error")
 end
 
