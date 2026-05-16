@@ -13,11 +13,18 @@ end
 function division(a,b)
     return a/b
 end
+function potenciacion(a,b)
+    return a^b
+end
+function  rais(a,b)
+    return a ^ (1 / b)
+    
+end
 
 print("elige dos numeros")
-local n1 = io.read()
-local n2 = io. read()
-print("elige la operasion: +,*,-,/,")
+local n1 = tonumber(io.read())
+local n2 = tonumber(io.read())
+print("elige la operasion: +,*,-,/,pot,rais")
 local operasion = io.read()
 if operasion == "+" then
     print(suma(n1,n2))
@@ -30,5 +37,8 @@ elseif operasion=="-" then
 
 elseif operasion=="*" then
     print(multiplicacion(n1,n2))
-
+elseif operasion=="pot" then
+    print(potenciacion(n1,n2))
+elseif operasion=="rais" then
+    print(rais(n1,n2))
 end
