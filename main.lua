@@ -33,7 +33,9 @@ function log(a,b)
 end
 function porsentage(a,b)
     return a*b/100
-    
+end
+function mudulo(a,b)
+    return a%b
 end
 
 print("elige dos numeros")
@@ -66,6 +68,8 @@ elseif operasion =="log" then
     print(log(n1,n2))
 elseif operasion =="porsentage" then
     print(porsentage(n1,n2))
+elseif operasion == "modulo" then
+    print(mudulo(n1,n2))
 else
     print("error")
 end
