@@ -38,39 +38,45 @@ function mudulo(a,b)
     return a%b
 end
 
-print("elige dos numeros")
-local n1 = tonumber(io.read())
-local n2 = tonumber(io.read())
-print("elige la operasion: +,*,-,/,pot,rais,seno,coseno,tangent,log,porsentage")
-local operasion = io.read()
-if operasion == "+" then
-    print(suma(n1,n2))
+while true do
+   print("elige dos numeros")
+    local n1 = tonumber(io.read())
+    local n2 = tonumber(io.read())
+    print("elige la operasion: +,*,-,/,pot,rais,seno,coseno,tangent,log,porsentage,modulo")
+    local operasion = io.read()
+    if operasion == "+" then
+        print(suma(n1,n2))
 
-elseif operasion=="/" then
-    print(division(n1,n2))
+    elseif operasion=="/" then
+        print(division(n1,n2))
 
-elseif operasion=="-" then
-    print(resta(n1,n2))
+    elseif operasion=="-" then
+        print(resta(n1,n2))
 
-elseif operasion=="*" then
-    print(multiplicacion(n1,n2))
-elseif operasion=="pot" then
-    print(potenciacion(n1,n2))
-elseif operasion=="rais" then
-    print(rais(n1,n2))
-elseif operasion== "seno" then
-    print(seno(n1))
-elseif operasion== "coseno" then
-    print(coseno(n1))
-elseif operasion== "tangent" then
-    print(tangent(n1))
-elseif operasion =="log" then
-    print(log(n1,n2))
-elseif operasion =="porsentage" then
-    print(porsentage(n1,n2))
-elseif operasion == "modulo" then
-    print(mudulo(n1,n2))
-else
-    print("error")
+    elseif operasion=="*" then
+        print(multiplicacion(n1,n2))
+    elseif operasion=="pot" then
+        print(potenciacion(n1,n2))
+    elseif operasion=="rais" then
+        print(rais(n1,n2))
+    elseif operasion== "seno" then
+        print(seno(n1))
+    elseif operasion== "coseno" then
+        print(coseno(n1))
+    elseif operasion== "tangent" then
+        print(tangent(n1))
+    elseif operasion =="log" then
+        print(log(n1,n2))
+    elseif operasion =="porsentage" then
+        print(porsentage(n1,n2))
+    elseif operasion == "modulo" then
+        print(mudulo(n1,n2))
+    elseif operasion=="salir" then
+        break
+    else
+        print("error")
+    end
+
+  
 end
-
+   
