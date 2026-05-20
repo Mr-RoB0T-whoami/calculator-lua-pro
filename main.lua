@@ -47,8 +47,12 @@ while true do
     if operasion == "+" then
         print(suma(n1,n2))
 
-    elseif operasion=="/" then
-        print(division(n1,n2))
+    elseif operasion=="/" then 
+        if n2==0 then
+            print ("error") 
+        else
+            print(division(n1,n2))
+        end
 
     elseif operasion=="-" then
         print(resta(n1,n2))
@@ -78,5 +82,6 @@ while true do
     end
 
   
+    ::continue::
 end
    
