@@ -20,7 +20,7 @@ function  rais(a,b)
     return a ^ (1 / b)
 end
 function seno(a)
-    return math.sin(a)
+    return math.sin(math.rad(a))
 end
 function coseno(a)
     return math.cos(a)
@@ -37,6 +37,7 @@ end
 function mudulo(a,b)
     return a%b
 end
+
 
 while true do
    print("elige dos numeros")
@@ -84,4 +85,4 @@ while true do
   
     ::continue::
 end
-   
+      
